@@ -187,9 +187,16 @@ h1{
 .past_clients .owl-carousel{
     max-width: 1168px;
     margin: auto;
-    display: flex;
-    justify-content: center;
 }
 .past_clients .owl-carousel img{
     max-width: 128px;
+}
+.owl-carousel .owl-stage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
 }
