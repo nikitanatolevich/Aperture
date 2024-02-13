@@ -14,6 +14,7 @@ header div{
     text-align: center;
     display: flex;
     gap: 320px;
+    justify-content: space-between;
 }
 header div a:first-of-type{
     padding-top: 10px;
@@ -65,13 +66,18 @@ header div ul li:nth-child(2) a, header div ul li:nth-child(3) a, header div ul 
 .road{
     background-image: url("../images/road.svg");
     background-repeat: no-repeat;
-    padding-top: 440px;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 95px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     padding-bottom: 60px;
-    width: 1440px;
+    position: relative;
 }
 .filmmaker{
     max-width: 600px;
-    margin: auto;
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -102,31 +108,88 @@ h1{
     text-align: center;
     color: #c0c0c0;
 }
-.line{
+.mini_icons{
+    position: absolute;
     display: flex;
-    padding-left: 1140px;
+    right: 40px;
+    bottom: 40px;
+    list-style-type: none;
 }
-.sticky{
-    display: contents;
-    max-width: 295px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-}
-.sticky p{
+.mini_icons li{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1;
     color: #fff;
 }
-.sticky div:first-of-type, .sticky div:nth-child(2), .sticky div:nth-child(3){
+.mini_icons li:first-of-type, .mini_icons li:nth-child(2), .mini_icons li:nth-child(3){
     padding-right: 17px;
 }
-.speed{
-    display: inline-flex;
-    align-items: inherit;
+.mini_icons li:first-of-type::before{
+    content: url("../images/speed.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    bottom: -5px;
 }
-.speed img{
-    padding-right: 6px;
+.mini_icons li:nth-child(2)::before{
+    content: url("../images/circle.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    bottom: -5px;
+}
+.mini_icons li:nth-child(3)::before{
+    content: url("../images/iso.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    bottom: -5px;
+}
+.mini_icons li:last-of-type::before{
+    content: url("../images/location.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    bottom: -5px;
+}
+.past_clients{
+    background-color: black;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.past_clients h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.05;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.past_clients p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #c0c0c0;
+}
+.past_clients .past{
+    padding-bottom: 40px;
+    max-width: 600px;
+    margin: auto;
+}
+.past_clients .owl-carousel{
+    max-width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.past_clients .owl-carousel img{
+    max-width: 128px;
 }
