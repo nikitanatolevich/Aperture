@@ -1,4 +1,3 @@
-$(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         autoplay:true,
         autoplayTimeout:2000,
@@ -11,6 +10,4 @@ $(document).ready(function(){
             }
         }
         }
-        
     );
-});
