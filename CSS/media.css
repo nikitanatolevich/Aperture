@@ -125,11 +125,7 @@
         transition: all 0.3s ease-out;
     }
 
-    .logo-wrap a span {
-        color: #8167a9;
-    }
-
-    .logo-wrap a:hover {
+    .logo-wrap img:hover {
         opacity: 0.9;
     }
 
