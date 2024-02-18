@@ -7,24 +7,26 @@ header{
     background: #181818;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
 }
 header div{
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    display: flex;
-    gap: 320px;
+    display: inline-flex;
     justify-content: space-between;
 }
 header div a:first-of-type{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-nav{
+.cursor, .cursor2, .cursor3 {
+    display: none
+}
+.nav{
     max-width: 700px;
     margin: auto;
-    display: block;
+    display: inline-flex;
 }
 header div ul{
     display: flex;
