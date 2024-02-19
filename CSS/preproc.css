@@ -8,6 +8,12 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex; }
+  header .nav {
+    max-width: 700px;
+    margin: auto;
+    display: inline-flex; }
+  header .cursor, header .cursor2, header .cursor3 {
+    display: none; }
   header div {
     max-width: 1200px;
     margin: auto;
@@ -110,24 +116,36 @@ header {
   background-color: black;
   padding-top: 120px;
   padding-bottom: 100px; }
-  .past_clients p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
-    color: #c0c0c0; }
   .past_clients h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    text-align: center;
     font-size: 40px;
     line-height: 1.05;
-    text-align: center;
     color: #fff;
     padding-bottom: 15px; }
-    .past_clients h3 .past {
-      padding-bottom: 40px;
-      max-width: 600px;
-      margin: auto; }
+  .past_clients p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #c0c0c0; }
+  .past_clients .past {
+    padding-bottom: 40px;
+    max-width: 600px;
+    margin: auto; }
+  .past_clients .owl-carousel {
+    max-width: 1168px;
+    margin: auto; }
+    .past_clients .owl-carousel img {
+      max-width: 128px; }
+    .past_clients .owl-carousel .owl-stage {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .past_clients .owl-carousel .owl-item {
+      display: flex;
+      justify-content: center; }
 
 /*# sourceMappingURL=preproc.css.map */

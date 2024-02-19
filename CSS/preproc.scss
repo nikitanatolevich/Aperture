@@ -1,10 +1,15 @@
 $main_font: 'Poppins', sans-serif;
 $main_color: #fff;
 
-@mixin pastcode {
+@mixin pastcode{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-align: center;
+}
+
+@mixin display{
+  display: flex;
+  justify-content: center
 }
 
 * {
@@ -17,6 +22,14 @@ $main_color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    .nav{
+      max-width: 700px;
+      margin: auto;
+      display: inline-flex;
+    }
+    .cursor, .cursor2, .cursor3 {
+      display: none
+    }
       div{
         max-width: 1200px;
         margin: auto;
@@ -77,8 +90,7 @@ $main_color: #fff;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 95px);
-    display: flex;
-    justify-content: center;
+    @include display;
     align-items: flex-end;
     padding-bottom: 60px;
     position: relative;
@@ -128,31 +140,44 @@ $main_color: #fff;
     }
 
   }
-.past_clients{
+.past_clients {
   background-color: black;
   padding-top: 120px;
   padding-bottom: 100px;
-  p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
-    color: #c0c0c0;
-  }
-  h3{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+
+  h3 {
+    @include pastcode;
     font-size: 40px;
     line-height: 1.05;
-    text-align: center;
-    color: #fff;
+    color: $main_color;
     padding-bottom: 15px;
-    .past{
+  }
+  p {
+    @include pastcode;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #c0c0c0;
+  }
+    .past {
       padding-bottom: 40px;
       max-width: 600px;
       margin: auto;
     }
+    .owl-carousel {
+      max-width: 1168px;
+      margin: auto;
+
+      img {
+        max-width: 128px;
+      }
+      .owl-stage {
+        @include display;
+        align-items: center;
+      }
+      .owl-item{
+        @include display;
+      }
+    }
   }
-}
+
 
